@@ -16,7 +16,7 @@ X_data          <-  rbind(X_train, X_test)
 
 # reading the subject_train.txt file and assinging the column name "Subject"
 Subject_train   <-  read.table("./CourseEra/UCI HAR Dataset/train/subject_train.txt", sep = "", col.names = c("Subject"))
-# reading the subject_train.txt file 
+# reading the subject_test.txt file 
 Subject_test    <-  read.table("./CourseEra/UCI HAR Dataset/test/subject_test.txt", sep = "", col.names = c("Subject"))
 # Combining both the Subject data in to one table
 Subject_data    <-  rbind(Subject_train, Subject_test)
@@ -66,3 +66,5 @@ melted_data     <-  melt(Data, id.vars = c("Subject", "Activity"))
 tidyData        <-  dcast(melted_data, Subject + Activity ~ variable, mean)
 # write the tidydata into text file
 write.table(tidyData, file = "E:\\TidyData.txt",row.names = FALSE,sep = ";")
+#display the tidydata
+tidydata
