@@ -1,6 +1,6 @@
-## GETTING AND CLEANING DATA: COURSE PROJECT
+# GETTING AND CLEANING DATA: COURSE PROJECT
 
-# STEP 1: Merges the training and the test sets to create one data set.
+## STEP 1: Merges the training and the test sets to create one data set.
 
 * First getting the working directory
 * Loading the data.table package into R
@@ -20,24 +20,24 @@
 * Combining all the three matrices in to one big matrix or table using the cbind() function forming the original data set.
 
 
-# STEP 2: Extracts only the measurements on the mean and standard deviation for each measurement.
+## STEP 2: Extracts only the measurements on the mean and standard deviation for each measurement.
 
 * Getting the columns with mean() variable for mean
 * Getting the columns with std() variable for standard deviation
 * Extracting the data with mean() and std() columns from the original data set
 
 
-# STEP 3: Uses descriptive activity names to name the activities in the data set
+## STEP 3: Uses descriptive activity names to name the activities in the data set
 
 * Changing to activity numeric value to activity labels provided in the same .zip file (one by one; didn't find the appropriate function, tried merge also but fails)
 
 
-# STEP 4: Appropriately labels the data set with descriptive activity names.
+## STEP 4: Appropriately labels the data set with descriptive activity names.
 
 * Appropriate labelling of data variables using the gsub() function
 
 
-# STEP 5: Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+## STEP 5: Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 * Used: Original data set for getting the tidy data
 * Loading the reshape2 package into R
